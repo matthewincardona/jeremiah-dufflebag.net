@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spook Town</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link href="https://vjs.zencdn.net/8.9.0/video-js.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>SPOOK TOWN<br />EFFECT</h1>
+    <video
+      id="myVideo"
+      class="video-js"
+      loop="true"
+      preload="auto"
+      muted="true"
+      autoplay="true"
+      width="640"
+      height="264"
+      poster="MY_VIDEO_POSTER.jpg"
+      data-setup="{}"
+    >
+      <source src="./assets/Kitchen with Audio.mp4" type="video/mp4" />
+      <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a
+        web browser that
+        <a href="https://videojs.com/html5-video-support/" target="_blank"
+          >supports HTML5 video</a
+        >
+      </p>
+    </video>
+    <button onclick="toggleMute()" id="muteToggle">Toggle Sound</button>
+
+    <script src="https://vjs.zencdn.net/8.9.0/video.min.js"></script>
+    <script>
+      var video = document.getElementById("myVideo");
+
+      function toggleMute() {
+        // Toggle the mute property of the video
+        if (video.muted) {
+          video.muted = false;
+        } else {
+          video.muted = true;
+        }
+      }
+    </script>
+  </body>
+  <style>
+    h1 {
+      font-size: 4rem;
+      filter: sepia(60%);
+      mix-blend-mode: difference;
+      width: max-content;
+      color: white;
+      z-index: 10;
+      position: absolute;
+      inset: 40% 50%;
+      transform: translate(40% 50%);
+    }
+
+    #muteToggle {
+      position: fixed;
+      inset: 95% 90%;
+      width: max-content;
+      height: fit-content;
+      background-color: transparent;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    #myVideo {
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+</html>
