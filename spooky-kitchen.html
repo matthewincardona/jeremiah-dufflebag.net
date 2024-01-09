@@ -9,6 +9,9 @@
   </head>
   <body>
     <h1>SPOOK TOWN<br />EFFECT</h1>
+    <h1>SPOOK TOWN<br />EFFECT</h1>
+    <h1>SPOOK TOWN<br />EFFECT</h1>
+    <h1>SPOOK TOWN<br />EFFECT</h1>
     <video
       id="myVideo"
       class="video-js"
@@ -48,15 +51,46 @@
   </body>
   <style>
     h1 {
-      font-size: 4rem;
+      font-size: 8rem;
       filter: sepia(60%);
       mix-blend-mode: difference;
       width: max-content;
       color: white;
       z-index: 10;
       position: absolute;
-      inset: 40% 50%;
-      transform: translate(40% 50%);
+      inset: 50% 40%;
+      transform: translate(0% 0%);
+    }
+
+    h1:nth-of-type(1) {
+      -webkit-text-stroke: 2px #1c87c9;
+      background-color: blue;
+    }
+
+    h1:nth-of-type(2) {
+      animation: jiggle 0.18s 0s infinite backwards;
+    }
+
+    h1:nth-of-type(3) {
+      filter: blur(100px);
+    }
+
+    @keyframes jiggle {
+      0% {
+        transform: skew(2deg, 0deg) translate(0, 0);
+      }
+      20% {
+        transform: skew(-3deg, -1deg) translate(1%, 2%);
+      }
+      30% {
+        transform: skew(1deg, 2deg) translate(0, -3%);
+      }
+      70% {
+        transform: skew(-3deg, -1deg) translate(2%, 0);
+      }
+      100% {
+        transform: translate(1%, 3%);
+      }
     }
 
     #muteToggle {
@@ -64,7 +98,8 @@
       inset: 95% 90%;
       width: max-content;
       height: fit-content;
-      background-color: transparent;
+      mix-blend-mode: difference;
+      background-color: blue;
       border: none;
       color: white;
       cursor: pointer;
