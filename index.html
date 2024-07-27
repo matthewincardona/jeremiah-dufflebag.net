@@ -1,14 +1,53 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    </head>
-    <body>
-        <ul>
-            <li><a href="calculator/dist/index.html">Spline</a></li>
-            <li><a href="spooky-kitchen.html">Spook</a></li>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JeremiahDufflebag.net</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&family=Ubuntu:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <a href="calculator.html">3D Calculator</a>
+        <a href="dog-and-lobster.html">Dog and Lobster</a>
         </ul>
-    </body>
+    </div>
+</body>
+
+<style>
+    body {
+        background-color: rgb(19, 5, 18);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    a {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-style: bold;
+        font-size: clamp(3rem, 10vw, 6rem);
+        text-decoration: none;
+        color: rgb(209, 206, 209);
+    }
+
+    a:hover {
+        text-decoration: overline;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3em;
+    }
+</style>
+
 </html>
