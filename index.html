@@ -1,58 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JeremiahDufflebag.net</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&family=Ubuntu:wght@400;700&display=swap"
-        rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="container links">
-        <a href="calculator.html">Trash Bin Calculator</a>
-        <a href="dog-and-lobster.html">Dog and Lobster</a>
-        </ul>
-    </div>
-</body>
+      <div>
+        <p><a href="calculator.html">Trash Bin Calculator</a></p>
+        <p style="margin-left: 2%">Playing around with Spline.</p>
+      </div>
 
-<style>
+      <div>
+        <p><a href="dog-and-lobster.html">Dog and Lobster</a></p>
+        <p style="margin-left: 2%">Re-designing a friend's blog site.</p>
+      </div>
+    </div>
+  </body>
+
+  <style>
     body {
-        background-color: rgb(19, 5, 18);
+      background-color: rgb(19, 5, 18);
+      margin: clamp(3em, 10vw, 10em);
     }
 
     p,
     a {
-        font-family: "Ubuntu", sans-serif;
-        font-weight: 400;
-        font-size: clamp(3rem, 10vw, 6rem);
-        text-decoration: none;
-        color: rgb(209, 206, 209);
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 300;
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      text-decoration: none;
+      color: rgb(209, 206, 209);
     }
 
     h1,
     h2,
     h3,
-    h4, 
+    h4,
     .links a {
-        font-family: "Doto", sans-serif;
-        font-weight: 800;
+      font-family: "Doto", sans-serif;
+      font-weight: 800;
+      font-size: clamp(3rem, 10vw, 6rem);
     }
 
     a:hover {
-        text-decoration: overline;
+      text-decoration: overline;
     }
 
     .container {
-        display: flex;
-        flex-direction: column;
-        row-gap: 3em;
+      display: flex;
+      flex-direction: column;
+      row-gap: 3em;
     }
-</style>
-
+  </style>
 </html>
