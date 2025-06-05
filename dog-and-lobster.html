@@ -10,14 +10,24 @@
   <body>
     <div class="container">
       <!-- Ian Curtis Poster -->
-      <img
+      <!-- <img
         src="./assets/dog and lobster/webps/ian curtis poster.webp"
         alt="Ian Curtis Poster"
-      />
-      <img
-        src="./assets/dog and lobster/webps/ian curtis desktop.webp"
-        alt="Ian Curtis Inspired UI"
-      />
+      /> -->
+      <div>
+        <figure>
+          <img
+            src="./assets/dog and lobster/webps/ian curtis desktop.webp"
+            alt="Ian Curtis Inspired UI"
+          />
+          <figcaption>
+            Adapted from
+            <a href="./assets/dog and lobster/webps/ian curtis poster.webp"
+              >another poster</a
+            >
+          </figcaption>
+        </figure>
+      </div>
 
       <!-- Random Dummy Designs -->
       <img
@@ -46,13 +56,18 @@
   </body>
 
   <style>
-    body {
-      margin: clamp(3em, 10vw, 10em);
-    }
-
     .container {
       display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
       gap: 4em;
+      margin: clamp(2em, 10vw, 6em);
+    }
+
+    img {
+      width: 100%;
+      max-width: 1000px;
     }
   </style>
 </html>
