@@ -20,19 +20,29 @@
   <body>
     <div class="container links">
       <div>
-        <p><a href="calculator.html">Trash Bin Calculator</a></p>
+        <h2><a href="calculator.html">Trash Bin Calculator</a></h2>
         <p style="margin-left: 3%">Playing around with Spline.</p>
       </div>
 
       <div>
-        <p><a href="dog-and-lobster.html">Dog and Lobster</a></p>
+        <h2><a href="dog-and-lobster.html">Dog and Lobster</a></h2>
         <p style="margin-left: 3%">Re-designing a friend's blog site.</p>
       </div>
 
       <div>
-        <p><a href="stss-inc.html">STSS Inc.</a></p>
+        <h2><a href="stss-inc.html">STSS Inc.</a></h2>
         <p style="margin-left: 3%">Exploration for a NC staffing agency.</p>
       </div>
+    </div>
+
+    <div class="resources">
+      <h2><b>Design Resources</b></h2>
+      <ul>
+        <li><a href="https://iconify.design/">Open Source Icon Sets</a></li>
+        <li>
+          <a href="https://www.reactbits.dev/">Animated React UI Components</a>
+        </li>
+      </ul>
     </div>
   </body>
 
@@ -60,6 +70,8 @@
       font-family: "Doto", sans-serif;
       font-weight: 800;
       font-size: clamp(3rem, 10vw, 6rem);
+      line-height: 40px;
+      color: white;
     }
 
     a:hover {
@@ -70,6 +82,10 @@
       display: flex;
       flex-direction: column;
       row-gap: 3em;
+    }
+
+    .resources li {
+      margin-bottom: 15px;
     }
   </style>
 </html>
