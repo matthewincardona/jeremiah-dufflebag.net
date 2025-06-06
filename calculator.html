@@ -7,6 +7,17 @@
   </head>
 
   <body>
+    <div id="back-arrow">
+      <a href="/">
+        <img
+          src="./assets/icons/tabler--arrow-back.svg"
+          alt="Return to home button"
+          width="48px"
+          height="48px"
+        />
+      </a>
+    </div>
+
     <script
       type="module"
       src="https://unpkg.com/@splinetool/viewer@1.9.3/build/spline-viewer.js"
@@ -15,4 +26,14 @@
       url="https://prod.spline.design/6a0vTSD0S5eLTnTW/scene.splinecode"
     ></spline-viewer>
   </body>
+
+  <style>
+    #back-arrow {
+      position: fixed;
+      left: 10%;
+      top: 5%;
+      width: 48px;
+      height: 48px;
+    }
+  </style>
 </html>
