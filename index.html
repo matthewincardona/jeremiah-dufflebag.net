@@ -49,8 +49,8 @@
   <style>
     body {
       background-color: rgb(19, 5, 18);
-      margin: clamp(3em, 10vw, 10em);
-      margin-top: 6%;
+      padding: clamp(3em, 10vw, 10em);
+      padding-top: 6%;
     }
 
     p,
@@ -70,7 +70,7 @@
       font-family: "Doto", sans-serif;
       font-weight: 800;
       font-size: clamp(3rem, 10vw, 6rem);
-      line-height: 40px;
+      line-height: 120%;
       color: white;
     }
 
@@ -84,8 +84,22 @@
       row-gap: 3em;
     }
 
+    .container p {
+      margin-top: -4%;
+    }
+
+    .resources {
+      margin-top: 10%;
+      width: 100vw;
+      background: rgba(200, 72, 255, 0.228);
+    }
+
     .resources li {
       margin-bottom: 15px;
+    }
+
+    .resources ul {
+      list-style: none;
     }
   </style>
 </html>
